@@ -14,7 +14,7 @@ const open = getQueryVariable("open"), ref = getQueryVariable("ref"),
 function createWidgetIFrame(e, t) {
     const i = document.getElementsByTagName("body"), n = document.createElement("iframe"),
         o = isMobile ? "position: fixed !important; z-index:10010;" : "position: fixed !important; z-index:999999;";
-    n.setAttribute("style", o), n.setAttribute("frameborder", "0"), n.setAttribute("allow", "geolocation " + t), n.className = "widgetStyle", n.id = "botscrew-widget", n.src = e + "/?ref=" + ref + "&open=" + !!open, i[0].appendChild(n)
+    n.setAttribute("style", o), n.setAttribute("frameborder", "0"), n.setAttribute("allow", "geolocation " + e), n.className = "widgetStyle", n.id = "botscrew-widget", n.src = e + "/?ref=" + ref + "&open=" + !!open, i[0].appendChild(n)
 }
 
 function addMessageListener(e, t, i, n) {
