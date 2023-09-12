@@ -1,12 +1,38 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+            background-image: url('https://envato-shoebox-0.imgix.net/42e1/4edc-298e-41e5-ac79-b4b95f865670/A7R09765_24102019_A7Rii_China_Yading2019OCT_GI_SS.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=cc6c161d34a2abc6ebd2dcbb8be3219f');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            text-align: center;
+            padding: 100px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #botscrew-chat-frame {
+            min-width: 100%;
+            max-width: 100%;
+            height: 400px;
+            border: none; /* This removes the iframe border */
+        }
+    </style>
 </head>
 <body>
-  <script type="text/javascript" 
-        id="chatbot-initials-script" 
-        src="https://platform.botscrew.net/widget/script-chatbot.js" 
-        data-server-url="https://platform.botscrew.net/api" 
-        data-bot-id="978">
-</script>
+    <div class="container">
+        <h1>Background Image with Input Field</h1>
+        <p>Enter some text:</p>
+        <input type="text" placeholder="Type something...">
+    </div>
+
+    <!-- Place the iframe here -->
+    <iframe id="botscrew-chat-frame" src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42b-f861f6fae889&backendURL=https://app-qa.botscrew.net"></iframe>
 </body>
 </html>
+
