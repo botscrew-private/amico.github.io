@@ -7,20 +7,29 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif; /* Define a font for better cross-browser consistency */
         }
+
         .container {
             text-align: center;
-            padding: 100px;
+            padding: 5% 0; /* Use percentage-based padding for responsiveness */
         }
+
         input[type="text"] {
             padding: 10px;
             font-size: 16px;
         }
+
         #botscrew-chat-frame {
-            min-width: 100%;
-            max-width: 100%;
+            width: 100%; /* Make the iframe responsive in width */
             height: 400px;
             border: none; /* This removes the iframe border */
+        }
+
+        h1 {
+            color: white; /* Ensure text is readable on the background image */
         }
     </style>
 </head>
@@ -32,7 +41,8 @@
     </div>
 
     <!-- Place the iframe here -->
-    <iframe id="botscrew-chat-frame" src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42bf-861f6fae889&backendURL=https://app-q.botscrew.net"></iframe>
+    <iframe id="botscrew-chat-frame" src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42bf-861f6fae889&backendURL=https://app-qa.botscrew.net"></iframe>
 </body>
 </html>
+
 
