@@ -9,7 +9,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Set the body to full viewport height */
+            height: 100vh;
             background-image: url('https://envato-shoebox-0.imgix.net/f9c5/ff46-c945-4a42-a5b4-d5f925d9e584/196EEp6uH8CFbLP8sSDxJ2ER8WrS78ZLSwVQQ9l5.jpeg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1600&fit=max&markalign=center%2Cmiddle&markalpha=18&s=7777748209447481a1cafbc75cfe5ab5');
             background-size: cover;
             background-repeat: no-repeat;
@@ -19,8 +19,12 @@
         .container {
             text-align: center;
             padding: 5% 0;
-            width: 100%; /* Set the width to 100% */
-            height: 100%; /* Set the height to 100% */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         input[type="text"] {
@@ -29,8 +33,8 @@
         }
 
         #botscrew-chat-frame {
-            width: 100%; /* Set the width to 100% */
-            height: 100%; /* Set the height to 100% */
+            width: 100%;
+            height: 100%;
             border: none;
         }
 
@@ -49,6 +53,7 @@
     <iframe id="botscrew-chat-frame" src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42b-f861f6fae889&backendURL=https://app-qa.botscrew.net"></iframe>
 </body>
 </html>
+
 
 
 
