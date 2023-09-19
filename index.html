@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -10,7 +11,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             background-image: url('https://envato-shoebox-0.imgix.net/aa27/5000-94b9-4343-835f-f0e0ef090f71/DSC_1721.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=9c0014953bd0e3f378537b688f64a9d8');
             background-size: cover;
             background-repeat: no-repeat;
@@ -33,8 +33,10 @@
         }
 
         #botscrew-chat-frame {
-            min-width: 100%; /* Use 100% width to make it responsive */
-            max-width: 100%; /* Set a maximum width if needed */
+            min-width: 100%;
+            /* Use 100% width to make it responsive */
+            max-width: 100%;
+            /* Set a maximum width if needed */
             height: 450px;
             border: none;
         }
@@ -47,27 +49,30 @@
         @media (max-width: 768px) {
             .container {
                 padding: 10% 0;
-                width: 100%;/* Adjust padding for smaller screens */
+                width: 100%;
+                /* Adjust padding for smaller screens */
             }
 
             #botscrew-chat-frame {
-                height: 450px; /* Adjust the iframe height for smaller screens */
+                height: 450px;
+                /* Adjust the iframe height for smaller screens */
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <iframe id="botscrew-chat-frame" src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42b-f861f6fae889&backendURL=https://app-qa.botscrew.net"></iframe>
+        <div style="margin-top: 24px; min-height: 500px; background: pink; width: 100%">
+            <p>500px height div</p>
+        </div>
+        <iframe id="botscrew-chat-frame"
+            src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42b-f861f6fae889&backendURL=https://app-qa.botscrew.net"></iframe>
         <h1>Background Image with Input Field</h1>
         <p>Enter some text:</p>
         <input type="text" placeholder="Type something...">
+        <div style="min-height: 500px; background: pink; width: 100%">500px height div</div>
     </div>
 </body>
+
 </html>
-
-
-
-
-
-
