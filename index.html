@@ -41,6 +41,16 @@
             border: none;
         }
 
+        .vercelUrl {
+            width: 100%;
+        }
+
+        .submitVercelUrlBtn {
+            height: 50px;
+            width: max-content;
+            margin-top: 16px;
+        }
+
         h1 {
             color: white;
         }
@@ -66,12 +76,32 @@
         <div style="margin-top: 24px; min-height: 500px; background: pink; width: 100%">
             <p>500px height div</p>
         </div>
+
+
         <iframe id="botscrew-chat-frame"
             src="https://bep-embedded-ai-chat.vercel.app/?publicBotIdentifier=a4da9e5f-4544-45db-a42b-f861f6fae889&backendURL=https://app-qa.botscrew.net"></iframe>
-        <h1>Background Image with Input Field</h1>
-        <p>Enter some text:</p>
-        <input type="text" placeholder="Type something...">
-        <div style="min-height: 500px; background: pink; width: 100%">500px height div</div>
+
+
+        <p>How to update iframe source to feature branch url(vercel):</p>
+        <ul>
+            <li>Open <strong>bep-embedded-ai-chat</strong> on <a href="https://vercel.com/hembara-s-team"
+                    target="_blank">https://vercel.com/hembara-s.team</a></li>
+            <li>Click on three dot menu -> Copy Branch URL</li>
+            <img src="./guide1.jpg" />
+            <li>Insert to the input beneath and press submit</li>
+        </ul>
+        <label for="inputURL">
+            Pay attention that you don't need to add protocol or trailing slash
+            Just add URL as you copy from the vercel in format:
+            <span style="display: block;">
+                <strong>
+                    bep-embedded-ai-chat-git-bp-2664-add-chat-6b7afc-hembara-s-team.vercel.app</strong></span>
+
+            <input id="inputURL" type="text" class="vercelUrl" placeholder="Vercel branch feature URL">
+        </label>
+
+        <button class="submitVercelUrlBtn">Update iframe source URL</button>
+        <script defer src="./index.js"></script>
     </div>
 </body>
 
