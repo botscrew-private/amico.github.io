@@ -59,16 +59,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
         
         /* Media query for smaller screens (e.g., tablets) */
-    @media (min-width: 768px) and (max-width: 1920px) {
-    .container {
-        padding: 10% 0; /* Adjust padding for tablets */
-        width: 100%;
+    @media (max-width: 768px) {
+        .container {
+                  padding: 10% 0; /* Adjust padding for tablets */
+                  width: 100%;
+         }
+
+       #botscrew-chat-frame {
+                           height: 450px; /* Adjust the iframe height for tablets */
+         }
     }
 
-    #botscrew-chat-frame {
-        height: 800px; /* Adjust the iframe height for tablets */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .container {
+                  padding: 10% 0; /* Adjust padding for tablets */
+                  width: 100%;
+         }
+
+       #botscrew-chat-frame {
+                           height: 600px; /* Adjust the iframe height for tablets */
+         }
     }
- }
+
+  
+        
 
 
     #botscrew-chat-frame {
