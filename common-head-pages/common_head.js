@@ -13,4 +13,4 @@ function addCommonHead() {
   document.head.prepend(scriptTag);
 }
 
-document.addEventListener("DOMContentLoaded", addCommonHead);
+addCommonHead();
