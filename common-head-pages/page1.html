@@ -3,89 +3,86 @@
 
 <head>
     <!--<link rel="import" href="common_head.html">-->
-     <!-- Google Tag Manager -->
-<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- Google Tag Manager -->
+    <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PN2NSR84');</script>-->
-<!-- End Google Tag Manager -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url('https://envato-shoebox-0.imgix.net/aa27/5000-94b9-4343-835f-f0e0ef090f71/DSC_1721.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=9c0014953bd0e3f378537b688f64a9d8');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+    <!-- End Google Tag Manager -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://envato-shoebox-0.imgix.net/aa27/5000-94b9-4343-835f-f0e0ef090f71/DSC_1721.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=9c0014953bd0e3f378537b688f64a9d8');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-    .container {
-        text-align: center;
-        padding: 5% 0;
-        width: 55%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    input[type="text"] {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    #botscrew-chat-frame {
-        min-width: 100%;
-        /* Use 100% width to make it responsive */
-        width: 100%;
-        /* Set a maximum width if needed */
-        height: 450px;
-        border: none;
-    }
-
-    .submitVercelUrlBtn {
-        height: 50px;
-        width: max-content;
-        margin-top: 16px;
-    }
-
-    h1 {
-        color: white;
-    }
-
-    /* Media query for smaller screens (e.g., mobile devices) */
-    @media (max-width: 768px) {
         .container {
-            padding: 10% 0;
-            width: 100%;
-            /* Adjust padding for smaller screens */
+            text-align: center;
+            padding: 5% 0;
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
         }
 
         #botscrew-chat-frame {
+            min-width: 100%;
+            /* Use 100% width to make it responsive */
+            width: 100%;
+            /* Set a maximum width if needed */
             height: 450px;
-            /* Adjust the iframe height for smaller screens */
+            border: none;
         }
-    }
-</style>
-<script type="module" src="common_head.js"></script>
-<script type="module">
-    import { addCommonHead } from './common_head.js';
-    addCommonHead();
-</script>
+
+        .submitVercelUrlBtn {
+            height: 50px;
+            width: max-content;
+            margin-top: 16px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10% 0;
+                width: 100%;
+                /* Adjust padding for smaller screens */
+            }
+
+            #botscrew-chat-frame {
+                height: 450px;
+                /* Adjust the iframe height for smaller screens */
+            }
+        }
+    </style>
+    <script src="./common_head.js"></script>
+
 </head>
 
 <body>
     <a href="tel:+380938129176">Call button</a>
     <!-- Google Tag Manager (noscript) -->
- <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN2NSR84"
+    <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN2NSR84"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
-<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
     <div class="container">
         <div style="margin-top: 24px; min-height: 500px; background: pink; width: 100%">
             <p>500px height div</p>
@@ -110,7 +107,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </label>
 
         <button class="submitVercelUrlBtn">Update iframe source URL</button>
-       
+
     </div>
 </body>
 
