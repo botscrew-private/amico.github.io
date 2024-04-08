@@ -1,0 +1,35 @@
+<html>
+  <head></head>
+  <body>
+    <p>Hi!</p>
+    <script
+      type="text/javascript"
+      id="chatbot-initials-script"
+      src="https://platform.botscrew.net/finhost/script-chatbot.js"
+      data-server-url="https://platform.botscrew.net/api"
+      data-bot-id="0de9d904-8170-44f6-9369-e97252ba8e3c"
+    ></script>
+  </body>
+  <script>
+    window.addEventListener(
+      "message",
+      function (event) {
+        var message = event.data;
+        if (typeof message === "object" && message.type === "chat-loaded") {
+          console.log("loaded");
+          document.getElementById("botscrew-widget").contentWindow.postMessage(
+            {
+              type: "finhost-data",
+              attributes: {
+                finhost_id: "<user-id>",
+                user_email: "<valid-user-email>",
+              },
+            },
+            "https://platform.botscrew.net"
+          );
+        }
+      },
+      false
+    );
+  </script>
+</html>
